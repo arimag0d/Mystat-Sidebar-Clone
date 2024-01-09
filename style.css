@@ -1,0 +1,162 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+nav {
+    background-blend-mode: multiply;
+    background: rgba(33, 51, 71, 0.8);
+    background-image: url(assets/images/park.jpg);
+
+    width: 260px;
+    height: 100vh;
+}
+
+nav header {
+    padding: 20px 10px;
+}
+
+nav header a {
+    padding: 25px 0px 15px;
+}
+
+nav header img {
+    padding: 0px 52.5px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 20px;
+    margin-top: 16px;
+}
+
+nav ul li {
+    margin-bottom: 29px;
+    padding: 0 0 0 35px;
+    line-height: 20px;
+}
+
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    top: auto;
+    left: 20px;
+    background-size: cover;
+    filter: invert(65%) grayscale(100%);
+    width: 20px;
+    height: 20px;
+}
+
+nav ul li.main-item a::before {
+    background-image: url('assets/resources/main.svg');
+}
+
+nav ul li.progress-item a::before {
+    background-image: url('assets/resources/line.svg');
+}
+
+nav ul li.rewards-item a::before {
+    background-image: url('assets/resources/star.svg')
+}
+
+nav ul li.homeworks-item a::before {
+    background-image: url('assets/resources/tasks.svg')
+}
+
+nav ul li.library-item a::before {
+    background-image: url('assets/resources/books.svg')
+}
+
+nav ul li.news-item a::before {
+    background-image: url('assets/resources/message.svg')
+}
+
+nav ul li.payment-item a::before {
+    background-image: url('assets/resources/card.svg')
+}
+
+nav ul li.schedule-item a::before {
+    background-image: url('assets/resources/calendar.svg')
+}
+
+nav ul li.feedback-item a::before {
+    background-image: url('assets/resources/pen.svg')
+}
+
+nav ul li.profile-item a::before {
+    background-image: url('assets/resources/profile.svg')
+}
+
+nav ul li.faq-item a::before {
+    background-image: url('assets/resources/question.svg')
+}
+
+nav ul li.contacts-item a::before {
+    background-image: url('assets/resources/pin.svg')
+}
+
+nav ul li.signal-item a::before {
+    background-image: url('assets/images/signal_white.png');
+    content: "";
+    position: absolute;
+    top: auto;
+    left: 22.5px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: invert(35%) grayscale(100%);
+    width: 20px;
+    height: 20px;
+}
+
+nav ul li a:hover::before {
+    filter: invert(100%) grayscale(100%);
+}
+
+nav ul li.signal-item a:hover::before {
+    filter: invert(0%) grayscale(100%);
+}
+
+nav div.shop-link a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav div.shop-link {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px 0;
+    border-radius: 10px;
+    border: 1px dashed #fff;
+}
+
+nav div.shop-link a:hover {
+    text-decoration: underline;
+}
+
+nav div a img {
+    filter: invert(100%) grayscale(100%);
+    padding-top: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+nav div a:hover img {
+    transform: rotate(-15deg);
+}
+
+nav ul a {
+    color: #a2a9ae;
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    color: white;
+}
